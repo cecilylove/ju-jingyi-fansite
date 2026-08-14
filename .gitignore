@@ -11,3 +11,6 @@ Thumbs.db
 
 # WorkBuddy 代理内部数据（非站点代码）
 .workbuddy/
+
+# 技能包等无关压缩包
+fansite-image-integration.zip
