@@ -12,14 +12,14 @@
   <header class="nav">
     <div class="wrap">
       <a class="brand" href="index.html">鞠婧祎</a>
-      <nav class="nav-links">
+      <nav class="nav-links" id="site-navigation">
         <a href="index.html">首页</a>
         <a href="about.html">关于她</a>
         <a href="works.html">作品</a>
         <a href="gallery.html" class="active">图库</a>
         <a href="news.html">动态</a>
       </nav>
-      <div class="nav-toggle"><span></span><span></span><span></span></div>
+      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -28,19 +28,19 @@
       <div class="section-head reveal">
         <div class="kicker">Gallery</div>
         <h2>营业图</h2>
-        <p>点击任意图片可放大查看。图源：微博 @鞠婧祎 营业图，版权归权利方所有，仅供粉丝非商业纪念用途。</p>
+        <p>选择任意图片可放大查看。图源：微博 @鞠婧祎 营业图，版权归权利方所有，仅供粉丝非商业纪念用途。</p>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item reveal" data-label="营业图 · 一"><img src="assets/img/gallery-01.jpg" alt="营业图 · 一" /></div>
-        <div class="gallery-item reveal d1" data-label="营业图 · 二"><img src="assets/img/gallery-02.jpg" alt="营业图 · 二" /></div>
-        <div class="gallery-item reveal d2" data-label="营业图 · 三"><img src="assets/img/gallery-03.jpg" alt="营业图 · 三" /></div>
-        <div class="gallery-item reveal" data-label="营业图 · 四"><img src="assets/img/gallery-04.jpg" alt="营业图 · 四" /></div>
-        <div class="gallery-item reveal d1" data-label="营业图 · 五"><img src="assets/img/gallery-05.jpg" alt="营业图 · 五" /></div>
-        <div class="gallery-item reveal d2" data-label="营业图 · 六"><img src="assets/img/gallery-06.jpg" alt="营业图 · 六" /></div>
-        <div class="gallery-item reveal" data-label="营业图 · 七"><img src="assets/img/gallery-07.jpg" alt="营业图 · 七" /></div>
-        <div class="gallery-item reveal d1" data-label="营业图 · 八"><img src="assets/img/gallery-08.jpg" alt="营业图 · 八" /></div>
-        <div class="gallery-item reveal d2" data-label="营业图 · 九"><img src="assets/img/gallery-09.jpg" alt="营业图 · 九" /></div>
+        <button class="gallery-item reveal" type="button" data-label="营业图 · 一" aria-label="放大查看营业图 · 一"><img src="assets/img/gallery-01.jpg" alt="营业图 · 一" /></button>
+        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 二" aria-label="放大查看营业图 · 二"><img src="assets/img/gallery-02.jpg" alt="营业图 · 二" /></button>
+        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 三" aria-label="放大查看营业图 · 三"><img src="assets/img/gallery-03.jpg" alt="营业图 · 三" /></button>
+        <button class="gallery-item reveal" type="button" data-label="营业图 · 四" aria-label="放大查看营业图 · 四"><img src="assets/img/gallery-04.jpg" alt="营业图 · 四" /></button>
+        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 五" aria-label="放大查看营业图 · 五"><img src="assets/img/gallery-05.jpg" alt="营业图 · 五" /></button>
+        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 六" aria-label="放大查看营业图 · 六"><img src="assets/img/gallery-06.jpg" alt="营业图 · 六" /></button>
+        <button class="gallery-item reveal" type="button" data-label="营业图 · 七" aria-label="放大查看营业图 · 七"><img src="assets/img/gallery-07.jpg" alt="营业图 · 七" /></button>
+        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 八" aria-label="放大查看营业图 · 八"><img src="assets/img/gallery-08.jpg" alt="营业图 · 八" /></button>
+        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 九" aria-label="放大查看营业图 · 九"><img src="assets/img/gallery-09.jpg" alt="营业图 · 九" /></button>
       </div>
     </div>
   </section>
@@ -93,9 +93,10 @@
   </footer>
 
   <!-- 灯箱 -->
-  <div class="lightbox" id="lightbox">
-    <div class="lb-close">&times;</div>
-    <div class="lb-inner">图片</div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true" inert>
+    <h2 class="sr-only" id="lightbox-title">图片预览</h2>
+    <button class="lb-close" type="button" aria-label="关闭图片预览">&times;</button>
+    <div class="lb-inner"></div>
   </div>
 
   <script src="assets/js/main.js"></script>
