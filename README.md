@@ -26,7 +26,9 @@ ju-jingyi-fansite/
 ├── assets/
 │   ├── css/styles.css  # 设计系统（改色 / 字体 / 圆角）
 │   ├── js/main.js      # 渲染器 + 导航 / 滚动动画 / 灯箱
-│   └── img/            # 图片素材（12 张）
+│   └── img/            # 图片素材
+│       ├── favicon.svg / favicon-32.png / apple-touch-icon.png  # 站点图标
+│       └── og-cover.jpg   # 社交分享卡片封面（1200×918）
 ├── AGENTS.md           # 给后续维护者（含 AI）的详细说明：渲染机制、数据字段表、常见任务
 └── README.md
 ```
@@ -83,7 +85,19 @@ python -m http.server 8080
 站名分布在两类位置，改的时候**两处都要动**：
 
 1. `data/site.js` → `meta.name` / `meta.nameEn`（导航栏与页脚，全站生效）
-2. 6 个 HTML 的 `<title>` 与 `<meta name="description">`（这些是静态 SEO 标签，JS 渲染的内容搜索引擎读不到，必须写在 HTML 里）
+2. 6 个 HTML 的 head：`<title>`、`<meta name="description">`，以及 `og:site_name` / `og:title`
+
+> **别改漏 head。** 页面内容虽然由 JS 渲染，但这些是**静态标签** ——
+> 社交平台（微信 / 微博 / QQ）和搜索引擎的爬虫都不执行 JS，只看 head 里写了什么。
+> 自检脚本里有一组 head 断言盯着六个页面，改漏了会报红。
+
+### 分享卡片（og 标签）
+
+六个页面的 head 里各有一组 `og:` 标签，决定链接被分享到微信 / 微博 / QQ 时卡片长什么样。
+其中 `og:image` 指向 `assets/img/og-cover.jpg`。
+
+> ⚠️ **`og:image` 目前是相对路径**。绑定自定义域名后，建议改成绝对地址
+> （`https://你的域名/assets/img/og-cover.jpg`），兼容性更好。各页 head 里都留了注释标明。
 
 ## 四、部署到 EdgeOne Makers
 
