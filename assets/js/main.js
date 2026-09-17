@@ -480,8 +480,12 @@ const DELAY4 = ['', ' d1', ' d2', ' d3'];
 
 /* =========================================================
    7. 动态页渲染器
-   <div class="timeline" data-render-news="timeline">
    <div class="grid grid-2" data-render-news-articles>
+   <div class="timeline" data-render-news="timeline">
+
+   ⚠️ timeline 目前【没有页面在用】（星河纪事已从动态页移除，
+      见 data/news.js 顶部说明）。渲染器保留，是为了将来想恢复展示时
+      直接加个容器就能复用，不用改动 JS。
    ========================================================= */
 (function renderNews() {
   const news = window.NEWS;

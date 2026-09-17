@@ -78,7 +78,7 @@ window.ABOUT = {
 
   /* ---------- 5. 各区块标题（对应 about.html 的 data-heading） ---------- */
   sections: {
-    journey: { kicker: 'Journey', title: '成长历程', desc: '从剧场少女到独当一面的演员与歌手，只记录「身份与阶段发生改变」的关键节点。更细的逐年记录见「动态 · 星河纪事」。（资料参考公开报道，以官方为准）' },
+    journey: { kicker: 'Journey', title: '成长历程', desc: '从剧场少女到独当一面的演员与歌手，只记录「身份与阶段发生改变」的关键节点。（资料参考公开报道，以官方为准）' },
     fandom:  { kicker: 'Fandom',  title: '应援信息', desc: '以下信息综合公开资料与粉丝社群共识整理，已注明出处性质。' },
     honors:  { kicker: 'Honors',  title: '主要荣誉', desc: '综合公开奖项记录整理，仅收录有一线公开记录者，已区分「获奖」与「提名」。' }
   }
