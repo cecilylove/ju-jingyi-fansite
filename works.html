@@ -3,382 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>作品 · 鞠婧祎 · 蜜橘小窝</title>
-  <meta name="description" content="鞠婧祎音乐与影视作品整理（资料参考百度百科、酷狗音乐及公开媒体报道）。" />
+  <title>作品 · 鞠婧祎 · 橘光集</title>
+  <meta name="description" content="橘光集 · 鞠婧祎音乐与影视作品整理（资料参考百度百科、酷狗音乐及公开媒体报道）。" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body data-page="works">
 
-  <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="index.html">鞠婧祎</a>
-      <nav class="nav-links" id="site-navigation">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于她</a>
-        <a href="works.html" class="active">作品</a>
-        <a href="gallery.html">图库</a>
-        <a href="news.html">动态</a>
-      </nav>
-      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <!-- 导航：由 data/site.js 渲染 -->
+  <header class="nav" data-site-nav></header>
 
-  <!-- 音乐作品 -->
+  <!-- 页面大标题 -->
   <section style="padding-top:calc(var(--nav-h) + 70px)">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Music</div>
-        <h2>音乐作品</h2>
-        <p>从首张个人 EP 到九周年纪念专辑，再到传唱度极高的影视原声。资料综合自百度百科、酷狗音乐及公开媒体报道，于 2026 年 8 月整理（粉丝站非营利整理，以官方信息为准）。</p>
-      </div>
+      <div class="section-head reveal" data-pagehead data-source="WORKS"></div>
+    </div>
+  </section>
 
-      <h3 class="sub-title reveal">个人专辑与单曲</h3>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="tag">2016 · EP</span>
-          <h3>《每一天》</h3>
-          <p>首张个人 EP，标志个人音乐旅程的起点。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2017 · EP</span>
-          <h3>《等不到你》</h3>
-          <p>含《想你了》（年度十大金曲）、《Like I Do》等。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2017 · EP</span>
-          <h3>《分裂时差》</h3>
-          <p>R&amp;B 风格单曲 EP，含《Rain》。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2019 · 生日 EP</span>
-          <h3>《孤独与诗》</h3>
-          <p>生日单曲 EP，走心抒情代表作。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2019 · EP</span>
-          <h3>《恋爱告急》</h3>
-          <p>单飞后代表作，舞台爆款甜歌，含《虹》。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2022 · 专辑</span>
-          <h3>《IX》</h3>
-          <p>出道九周年纪念实体专辑，鞠婧祎担任总监制，含《今日晴》《0.2s》。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2026 · EP</span>
-          <h3>《着火的沉默世界》</h3>
-          <p>电视剧《万花世界》系统先行曲。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2018 · 单曲</span>
-          <h3>《Don't Touch》</h3>
-          <p>SNH48 金曲大赏冠军曲目，为其赢得个人定制 solo。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2023 · 单曲</span>
-          <h3>《花》</h3>
-          <p>生物股长《SAKURA》中文版，多平台收藏破百万。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2024 · 单曲</span>
-          <h3>《壁上观》</h3>
-          <p>融合电子与古典元素的创新之作。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2025 · 单曲</span>
-          <h3>《落日未眠》</h3>
-          <p>31 岁生日单曲，入选 QQ 音乐巅峰潮流榜年度十大单曲。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2021 · 单曲</span>
-          <h3>《过去完成时》</h3>
-          <p>原创单曲，曾被伯克利音乐学院翻唱。</p>
-        </div>
-      </div>
+  <!-- 音乐作品 -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal" data-heading="music" data-source="WORKS"></div>
 
-      <h3 class="sub-title reveal">影视原声 OST</h3>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="tag">《芸汐传》</span>
-          <h3>叹云兮 / 落花成泥</h3>
-          <p>片尾曲《叹云兮》国民古风出圈金曲；推广曲《落花成泥》中式婉约。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">《新白娘子传奇》</span>
-          <h3>千年等一回 / 青城山下白素贞 / 渡情</h3>
-          <p>经典 IP 新演绎，融入戏曲元素，被称为「最美白娘子」主题曲。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">《花戎》</span>
-          <h3>误长生 / 仍寻</h3>
-          <p>主题曲《误长生》与片尾曲《仍寻》，仙侠抒情双璧。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">《仙剑四》</span>
-          <h3>如纱</h3>
-          <p>韩菱纱角色主题曲，温柔缱绻。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">《月鳞绮纪》</span>
-          <h3>露珠在晨曦前消散 / 不苦</h3>
-          <p>露芜衣角色曲《露珠在晨曦前消散》与露芜衣&寄灵命定曲《不苦》，均由鞠婧祎演唱，2026 年随剧同步发布。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">《如意芳霏》</span>
-          <h3>芙蓉 / 梦渡 / 古画</h3>
-          <p>片头曲《芙蓉》、主题曲《梦渡》与插曲《古画》。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">《嘉南传》</span>
-          <h3>莫离 / 念思雨</h3>
-          <p>片头曲《莫离》婉转深情；片尾曲《念思雨》与曾舜晞对唱，融入戏腔。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">《请赐我一双翅膀》</span>
-          <h3>一双翅膀</h3>
-          <p>民国悬疑剧片尾曲。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">《九州·天空城》</span>
-          <h3>醉飞霜</h3>
-          <p>雪飞霜角色插曲，早期美强惨角色曲。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">《游泳先生》</span>
-          <h3>听到请回答 / 想你了</h3>
-          <p>《游泳先生》两首原声，均由鞠婧祎演唱，亦收录于 EP《等不到你》。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">《我要逆风去》</span>
-          <h3>伴 / Stay With Me</h3>
-          <p>与张新成合唱的插曲，轻快心动对唱。</p>
-        </div>
-      </div>
+      <h3 class="sub-title reveal" data-subtitle="albums" data-source="WORKS"></h3>
+      <div class="grid grid-3" data-render="albums" data-source="WORKS"></div>
+
+      <h3 class="sub-title reveal" data-subtitle="ost" data-source="WORKS"></h3>
+      <div class="grid grid-3" data-render="ost" data-source="WORKS"></div>
     </div>
   </section>
 
   <!-- 电影 -->
   <section>
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Film</div>
-        <h2>电影作品</h2>
-        <p>从早期微电影到院线作品，以下为代表性的电影出演与角色（资料参考公开百科）。</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="tag">2015 · 微电影</span>
-          <h3>《魔天劫》</h3>
-          <p>饰 珈蓝。早期奇幻微电影，冷感暗黑的小众角色。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2015</span>
-          <h3>《爱之初体验》</h3>
-          <p>饰 鞠婧祎。导演 海涛，都市青春题材。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2021</span>
-          <h3>《我爱喵星人》</h3>
-          <p>饰 茉莉。导演 刘希坤，合作 吴世勋、吴倩、宋威龙。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2024</span>
-          <h3>《金钱堡垒》</h3>
-          <p>饰 韩小美。警匪动作悬疑电影，导演 彭发，合作 王千源、张俪。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">待映</span>
-          <h3>《粉墨江湖》</h3>
-          <p>饰 澹台台。郭德纲导演，民国梨园题材喜剧电影。</p>
-        </div>
-      </div>
+      <div class="section-head reveal" data-heading="film" data-source="WORKS"></div>
+      <div class="grid grid-3" data-render="films" data-source="WORKS"></div>
     </div>
   </section>
 
   <!-- 影视作品 -->
   <section class="section-alt">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Screen</div>
-        <h2>影视作品</h2>
-        <p>从古装玄幻到仙侠经典，以下为代表性的影视出演与角色。</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="tag">2016</span>
-          <h3>《九州·天空城》</h3>
-          <p>饰 雪飞霜。首部主演的玄幻剧集。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2016</span>
-          <h3>《热血长安》</h3>
-          <p>饰 上官紫苏。探案题材剧集出演。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2018</span>
-          <h3>《芸汐传》</h3>
-          <p>饰 韩芸汐。广受关注的古装剧代表作。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2019</span>
-          <h3>《新白娘子传奇》</h3>
-          <p>饰 白素贞。经典 IP 的新演绎。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2019</span>
-          <h3>《请赐我一双翅膀》</h3>
-          <p>饰 林九歌。民国悬疑剧。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2020</span>
-          <h3>《漂亮书生》</h3>
-          <p>饰 雪文曦。古风励志校园剧。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2020</span>
-          <h3>《如意芳霏》</h3>
-          <p>饰 傅容。古装轻喜剧。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2021</span>
-          <h3>《嘉南传》</h3>
-          <p>饰 姜保宁。古装剧主演。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2023</span>
-          <h3>《花戎》</h3>
-          <p>饰 魏枝。轻古风仙侠剧主演。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2024</span>
-          <h3>《花间令》</h3>
-          <p>古装言情探案剧。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2024</span>
-          <h3>《仙剑四》</h3>
-          <p>饰 韩菱纱。经典游戏改编剧集主演。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2026</span>
-          <h3>《月鳞绮纪》</h3>
-          <p>饰 露芜衣。古装奇幻剧，九尾狐角色。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2017</span>
-          <h3>《轩辕剑之汉之云》</h3>
-          <p>饰 兰茵。山海界应龙之女，清丽温婉的古装仙侠角色。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2018</span>
-          <h3>《游泳先生》</h3>
-          <p>饰 宋茶茶。家道中落却乐观向阳的都市青春励志女主。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2021</span>
-          <h3>《满月之下请相爱》</h3>
-          <p>饰 雷初夏。都市奇幻爱情剧女主，因满月磁场穿越时空。</p>
-        </div>
-        <div class="card reveal">
-          <span class="tag">2026</span>
-          <h3>《千香》</h3>
-          <p>饰 姜黎非。青丘孤女，仙侠剧《千香引》改编主演。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2015</span>
-          <h3>《史料不及》</h3>
-          <p>饰 如小花。早期荧屏出演作品。</p>
-        </div>
-      </div>
+      <div class="section-head reveal" data-heading="screen" data-source="WORKS"></div>
+      <div class="grid grid-3" data-render="dramas" data-source="WORKS"></div>
     </div>
   </section>
 
   <!-- 综艺与晚会 -->
   <section>
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Variety</div>
-        <h2>综艺与晚会</h2>
-        <p>参与的重要综艺与晚会（部分）。</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <span class="tag">2015</span>
-          <h3>《全员加速中》</h3>
-          <p>湖南卫视大型真人秀，担任嘉宾。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">2018</span>
-          <h3>《国风美少年》</h3>
-          <p>国风文化推广唱演秀，担任节目召集人。</p>
-        </div>
-        <div class="card reveal d2">
-          <span class="tag">2020 起</span>
-          <h3>央视及各大卫视晚会</h3>
-          <p>多次参与央视春晚及卫视跨年、盛典演出。</p>
-        </div>
-      </div>
+      <div class="section-head reveal" data-heading="variety" data-source="WORKS"></div>
+      <div class="grid grid-3" data-render="variety" data-source="WORKS"></div>
     </div>
   </section>
 
   <!-- 待播 / 拍摄中 -->
   <section class="section-alt">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Upcoming</div>
-        <h2>待播 · 拍摄中</h2>
-        <p>以下作品正在拍摄或等待排播，具体档期以官方公布为准（资料参考公开报道）。</p>
-      </div>
-      <div class="grid grid-2">
-        <div class="card reveal">
-          <span class="tag">待播 · 2026 暑期</span>
-          <h3>《来战》</h3>
-          <p>饰 阿黛。反套路仙侠轻喜剧，搭档张云龙、钟欣潼，已杀青待播。</p>
-        </div>
-        <div class="card reveal d1">
-          <span class="tag">拍摄中</span>
-          <h3>《万花世界》</h3>
-          <p>饰 苏绿夏。快穿无限流大女主，改编自国漫《万渣朝凰》，拍摄中。</p>
-        </div>
-      </div>
+      <div class="section-head reveal" data-heading="upcoming" data-source="WORKS"></div>
+      <div class="grid grid-2" data-render="upcoming" data-source="WORKS"></div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="wrap">
-      <div class="top">
-        <div>
-          <div class="brand-f">鞠婧祎</div>
-          <p>一个由粉丝用心守护的纪念角落。</p>
-        </div>
-        <div class="links">
-          <div>
-            <h5>站点</h5>
-            <a href="index.html">首页</a>
-            <a href="about.html">关于她</a>
-            <a href="works.html">作品</a>
-          </div>
-          <div>
-            <h5>同好</h5>
-            <a href="gallery.html">图库</a>
-            <a href="news.html">动态</a>
-          </div>
-          <div class="social-col">
-            <h5>社交账号</h5>
-            <div class="social-row">
-              <a class="social-chip" href="https://weibo.com/u/3669102477" target="_blank" rel="noopener">微博</a>
-              <a class="social-chip" href="https://v.douyin.com/kyUIUpl1Lpw/" target="_blank" rel="noopener">抖音</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bar">
-        本站为非官方粉丝站，与艺人及经纪公司无关 · 内容仅供粉丝非商业纪念用途<br />
-        © 2026 蜜橘小窝 · 非官方粉丝站
-      </div>
-    </div>
-  </footer>
+  <!-- 合规声明 -->
+  <section>
+    <div class="wrap" data-site-notice></div>
+  </section>
 
+  <!-- 页脚：由 data/site.js 渲染 -->
+  <footer class="footer" data-site-footer></footer>
+
+  <script src="data/site.js"></script>
+  <script src="data/works.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

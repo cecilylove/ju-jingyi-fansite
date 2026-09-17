@@ -3,41 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>鞠婧祎 应援站 · 蜜橘小窝</title>
-  <meta name="description" content="鞠婧祎粉丝纪念站 —— 非官方粉丝自发搭建，收录音乐、影视与光影（资料参考百度百科）。" />
+  <title>橘光集 · 鞠婧祎非官方粉丝纪念站</title>
+  <meta name="description" content="橘光集（Orange Light）—— 鞠婧祎非官方粉丝纪念站，由粉丝自发搭建，收录音乐、影视与光影（资料参考百度百科）。" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body class="home-page">
+<body class="home-page" data-page="index">
 
-  <!-- 导航 -->
-  <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="index.html">鞠婧祎</a>
-      <nav class="nav-links" id="site-navigation">
-        <a href="index.html" class="active">首页</a>
-        <a href="about.html">关于她</a>
-        <a href="works.html">作品</a>
-        <a href="gallery.html">图库</a>
-        <a href="news.html">动态</a>
-      </nav>
-      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <!-- 导航：由 data/site.js 渲染 -->
+  <header class="nav" data-site-nav></header>
 
   <!-- 人物首屏 -->
   <section class="home-hero">
-    <img class="home-hero-media" src="assets/img/feature-music.jpg" alt="鞠婧祎舞台造型" />
+    <img class="home-hero-media" data-home-hero="image" src="assets/img/feature-music.jpg" alt="鞠婧祎舞台造型" />
     <div class="home-hero-overlay"></div>
     <div class="wrap">
       <div class="home-hero-copy">
-        <span class="home-eyebrow">JU JINGYI · FAN MEMORIAL</span>
-        <h1>鞠婧祎</h1>
-        <p class="home-hero-lead">璀璨星河里，我们替你收藏每一束光。</p>
-        <p class="home-hero-note">演员 · 歌手 · 1994.06.18</p>
-        <div class="home-hero-actions">
-          <a class="btn btn-primary" href="gallery.html">浏览图库</a>
-          <a class="btn btn-ghost" href="works.html">查看作品</a>
-        </div>
+        <span class="home-eyebrow" data-home-hero="eyebrow"></span>
+        <h1 data-home-hero="title"></h1>
+        <p class="home-hero-lead" data-home-hero="lead"></p>
+        <p class="home-hero-note" data-home-hero="note"></p>
+        <div class="home-hero-actions" data-render-home="heroActions"></div>
       </div>
     </div>
     <a class="home-scroll" href="#fandom">向下探索<span aria-hidden="true"></span></a>
@@ -47,25 +32,8 @@
   <section class="home-fandom" id="fandom">
     <div class="wrap">
       <div class="home-fandom-strip">
-        <div class="home-fandom-intro">
-          <span class="home-fandom-kicker">MIJU FANDOM</span>
-          <strong>应援档案</strong>
-        </div>
-        <div class="home-fandom-item">
-          <span class="home-fandom-label"><i class="home-swatch home-swatch-blue"></i>应援色</span>
-          <strong>蓝色</strong>
-          <small>属于蜜橘的守护色</small>
-        </div>
-        <div class="home-fandom-item">
-          <span class="home-fandom-label">粉丝名</span>
-          <strong>蜜橘</strong>
-          <small>2019.12.29 由“鞠骑”正式更名为“蜜橘”</small>
-        </div>
-        <div class="home-fandom-item">
-          <span class="home-fandom-label">生日</span>
-          <strong>6 月 18 日</strong>
-          <small>1994 · 四川遂宁</small>
-        </div>
+        <div class="home-fandom-intro" data-render-home="fandomIntro"></div>
+        <div data-render-home="fandom" style="display:contents"></div>
       </div>
     </div>
   </section>
@@ -73,197 +41,57 @@
   <!-- 近期动态 -->
   <section class="home-focus" id="updates">
     <div class="wrap">
-      <div class="home-section-heading">
-        <div>
-          <div class="kicker">Updates</div>
-          <h2>近期动态</h2>
-        </div>
-        <p>记录最近的杂志消息与品牌合作。</p>
-      </div>
-      <div class="home-focus-grid">
-        <a class="home-focus-card" href="update-magazine.html">
-          <span class="home-focus-index">01</span>
-          <div>
-            <span class="tag">杂志动态 · 2026.08.21</span>
-            <h3>PORT 九月刊封面预告</h3>
-            <p>8 月 22 日 11:30，迎来荒漠之花的全盛时刻</p>
-          </div>
-          <span class="home-focus-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="home-focus-card" href="update-tutumian.html">
-          <span class="home-focus-index">02</span>
-          <div>
-            <span class="tag">品牌动态 · 2026.08.08</span>
-            <h3>凸凸棉品牌全球代言人</h3>
-            <p>以柔软力量，重新定义舒适边界</p>
-          </div>
-          <span class="home-focus-arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
+      <div class="home-section-heading" data-heading="updates" data-source="HOME"></div>
+      <!-- 近期动态：从 data/news.js 的 NEWS.articles 截取前 2 条（唯一源头） -->
+      <div class="home-focus-grid" data-render-home="updates" data-limit="2"></div>
     </div>
   </section>
 
   <!-- 关于她 -->
   <section class="home-about section-alt">
     <div class="wrap">
-      <div class="home-about-layout">
-        <div class="home-about-media reveal">
-          <img src="assets/img/about-portrait.jpg" alt="鞠婧祎肖像" loading="lazy" />
-          <span>1994 · SUI NING</span>
-        </div>
-        <div class="home-about-copy reveal d1">
-          <div class="kicker">About Her</div>
-          <h2>她，与这一方星河</h2>
-          <p class="home-about-lead">中国内地影视女演员、流行乐歌手。2013 年正式出道，从剧场舞台走向更广阔的音乐与光影世界。</p>
-          <p>2016 年、2017 年连续获得 SNH48 总决选第一名，2017 年晋升明星殿堂并成立个人工作室。她用作品记录成长，也在每一次舞台与角色中留下属于自己的光。</p>
-          <dl class="home-about-facts">
-            <div><dt>身份</dt><dd>演员 · 歌手</dd></div>
-            <div><dt>出道</dt><dd>2013.11.02</dd></div>
-            <div><dt>喜爱色</dt><dd><i class="home-swatch home-swatch-red"></i>红色</dd></div>
-          </dl>
-          <a class="home-text-link" href="about.html">阅读完整人物资料<span aria-hidden="true">→</span></a>
-        </div>
-      </div>
+      <div class="home-about-layout" data-render-home="about"></div>
     </div>
   </section>
 
   <!-- 代表作品 -->
   <section class="home-works">
     <div class="wrap">
-      <div class="home-section-heading reveal">
-        <div>
-          <div class="kicker">Selected Works</div>
-          <h2>音乐与光影</h2>
-        </div>
-        <p>从旋律到角色，收藏值得反复回望的代表作品。</p>
-      </div>
-      <div class="home-work-grid">
-        <article class="home-work-item reveal">
-          <a class="home-work-media" href="works.html" aria-label="查看音乐作品">
-            <img src="assets/img/gallery-07.jpg" alt="音乐篇章" loading="lazy" />
-            <span>Music</span>
-          </a>
-          <div class="home-work-copy">
-            <h3>音乐篇章</h3>
-            <p>从首张个人 EP《每一天》到担任总监制的九周年专辑《IX》，用旋律记录每一阶段的自己。</p>
-            <ul>
-              <li>《每一天》<span>2016</span></li>
-              <li>《恋爱告急》<span>2019</span></li>
-              <li>《IX》<span>2022</span></li>
-            </ul>
-            <a class="home-text-link" href="works.html">查看音乐作品<span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-        <article class="home-work-item reveal d1">
-          <a class="home-work-media" href="works.html" aria-label="查看影视作品">
-            <img src="assets/img/feature-screen.jpg" alt="光影足迹" loading="lazy" />
-            <span>Screen</span>
-          </a>
-          <div class="home-work-copy">
-            <h3>光影足迹</h3>
-            <p>从雪飞霜、韩芸汐到韩菱纱，她在不同故事里塑造鲜活角色，也不断拓展自己的表演边界。</p>
-            <ul>
-              <li>《芸汐传》<span>2018</span></li>
-              <li>《花戎》<span>2023</span></li>
-              <li>《仙剑四》<span>2024</span></li>
-            </ul>
-            <a class="home-text-link" href="works.html">查看影视作品<span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-      </div>
+      <div class="home-section-heading reveal" data-heading="works" data-source="HOME"></div>
+      <div class="home-work-grid" data-render-home="workCards"></div>
     </div>
   </section>
 
   <!-- 精选图库 -->
   <section class="home-gallery section-alt">
     <div class="wrap">
-      <div class="home-section-heading reveal">
-        <div>
-          <div class="kicker">Gallery</div>
-          <h2>光影掠影</h2>
-        </div>
-        <p>精选微博营业图，仅供非商业纪念用途。</p>
-      </div>
-      <div class="home-gallery-grid">
-        <a class="home-gallery-item home-gallery-feature reveal" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图一"><img src="assets/img/gallery-01.jpg" alt="鞠婧祎营业图一" loading="lazy" /></a>
-        <a class="home-gallery-item reveal d1" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图二"><img src="assets/img/gallery-02.jpg" alt="鞠婧祎营业图二" loading="lazy" /></a>
-        <a class="home-gallery-item reveal" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图三"><img src="assets/img/gallery-03.jpg" alt="鞠婧祎营业图三" loading="lazy" /></a>
-        <a class="home-gallery-item reveal d1" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图四"><img src="assets/img/gallery-04.jpg" alt="鞠婧祎营业图四" loading="lazy" /></a>
-        <a class="home-gallery-item reveal d2" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图五"><img src="assets/img/gallery-05.jpg" alt="鞠婧祎营业图五" loading="lazy" /></a>
-        <a class="home-gallery-item reveal" href="gallery.html" aria-label="前往完整图库查看鞠婧祎营业图六"><img src="assets/img/gallery-06.jpg" alt="鞠婧祎营业图六" loading="lazy" /></a>
-      </div>
-      <div class="home-center-action reveal"><a class="btn btn-primary" href="gallery.html">浏览完整图库</a></div>
+      <div class="home-section-heading reveal" data-heading="gallery" data-source="HOME"></div>
+      <div class="home-gallery-grid" data-render-home="galleryPreview"></div>
+      <div class="home-center-action reveal" data-render-home="galleryPreviewButton"></div>
     </div>
   </section>
 
   <!-- 精简里程碑 -->
   <section class="home-milestones">
     <div class="wrap">
-      <div class="home-section-heading reveal">
-        <div>
-          <div class="kicker">Milestones</div>
-          <h2>成长里程碑</h2>
-        </div>
-        <a class="home-text-link" href="news.html">查看完整历程<span aria-hidden="true">→</span></a>
-      </div>
-      <div class="home-milestone-grid">
-        <article class="home-milestone reveal"><time>2013</time><h3>正式出道</h3><p>随 Team NII《剧场女神》公演登台。</p></article>
-        <article class="home-milestone reveal d1"><time>2017</time><h3>连霸与新起点</h3><p>总决选连霸，晋升明星殿堂并成立个人工作室。</p></article>
-        <article class="home-milestone reveal d2"><time>2018</time><h3>《芸汐传》</h3><p>饰演韩芸汐，代表角色受到广泛关注。</p></article>
-        <article class="home-milestone reveal d3"><time>2026</time><h3>全新篇章</h3><p>新作品与新荣誉相继到来。</p></article>
-      </div>
+      <div class="home-section-heading reveal" data-heading="milestones" data-source="HOME"></div>
+      <!-- 成长里程碑：从全站共用的 SITE.milestones 截取前 4 条（数据在 data/site.js） -->
+      <div class="home-milestone-grid" data-render-home="milestones" data-limit="4"></div>
     </div>
   </section>
 
   <!-- 合规声明 -->
   <section class="section-alt home-disclaimer">
-    <div class="wrap">
-      <div class="disclaimer reveal">
-        <div class="ico">i</div>
-        <div>
-          <h3>非官方声明</h3>
-          <p>本网站为粉丝自发搭建的<strong>非官方</strong>纪念与应援站点，与艺人本人及其经纪公司无任何隶属或合作关系，不代表官方立场。站内文字资料整理自公开内容，版权归原作者及权利方所有，仅供非商业性的喜爱与纪念用途，如有侵权请联系下架。禁止将本站内容用于任何商业获利行为。</p>
-        </div>
-      </div>
-    </div>
+    <div class="wrap" data-site-notice></div>
   </section>
 
-  <!-- 页脚 -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="top">
-        <div>
-          <div class="brand-f">鞠婧祎</div>
-          <p>一个由粉丝用心守护的纪念角落。愿你眼里的光，有人替你珍藏。</p>
-        </div>
-        <div class="links">
-          <div>
-            <h5>站点</h5>
-            <a href="index.html">首页</a>
-            <a href="about.html">关于她</a>
-            <a href="works.html">作品</a>
-          </div>
-          <div>
-            <h5>同好</h5>
-            <a href="gallery.html">图库</a>
-            <a href="news.html">动态</a>
-          </div>
-          <div class="social-col">
-            <h5>社交账号</h5>
-            <div class="social-row">
-              <a class="social-chip" href="https://weibo.com/u/3669102477" target="_blank" rel="noopener">微博</a>
-              <a class="social-chip" href="https://v.douyin.com/kyUIUpl1Lpw/" target="_blank" rel="noopener">抖音</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bar">
-        本站为非官方粉丝站，与艺人及经纪公司无关 · 内容仅供粉丝非商业纪念用途<br />
-        © 2026 · 非官方粉丝站
-      </div>
-    </div>
-  </footer>
+  <!-- 页脚：由 data/site.js 渲染 -->
+  <footer class="footer" data-site-footer></footer>
 
+  <script src="data/site.js"></script>
+  <script src="data/home.js"></script>
+  <!-- 首页「近期动态」读动态页的文章数据，所以这里也要引 news.js -->
+  <script src="data/news.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

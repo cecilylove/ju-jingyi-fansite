@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>动态详情 · 橘光集</title>
+  <meta name="description" content="橘光集 · 鞠婧祎近期动态详情。" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="news">
+
+  <!-- 导航：由 data/site.js 渲染 -->
+  <header class="nav" data-site-nav></header>
+
+  <!--
+    详情页正文整块由 assets/js/main.js 的「动态详情页渲染器」生成。
+    内容来自 data/news.js 的 articles，按网址参数 ?id=xxx 取对应那篇。
+
+    加一条新动态：只在 data/news.js 的 articles 数组里加一项，不用动这个文件。
+  -->
+  <main class="update-detail" data-update-root></main>
+
+  <!-- 页脚：由 data/site.js 渲染 -->
+  <footer class="footer" data-site-footer></footer>
+
+  <script src="data/site.js"></script>
+  <script src="data/news.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

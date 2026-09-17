@@ -3,94 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图库 · 鞠婧祎 · 蜜橘小窝</title>
-  <meta name="description" content="鞠婧祎写真与舞台图库（图源：微博 @鞠婧祎，仅供非商业纪念用途）。" />
+  <title>图库 · 鞠婧祎 · 橘光集</title>
+  <meta name="description" content="橘光集 · 鞠婧祎写真与舞台图库（图源：微博 @鞠婧祎，仅供非商业纪念用途）。" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body data-page="gallery">
 
-  <header class="nav">
-    <div class="wrap">
-      <a class="brand" href="index.html">鞠婧祎</a>
-      <nav class="nav-links" id="site-navigation">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于她</a>
-        <a href="works.html">作品</a>
-        <a href="gallery.html" class="active">图库</a>
-        <a href="news.html">动态</a>
-      </nav>
-      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <!-- 导航：由 data/site.js 渲染 -->
+  <header class="nav" data-site-nav></header>
 
   <section style="padding-top:calc(var(--nav-h) + 70px)">
     <div class="wrap">
-      <div class="section-head reveal">
-        <div class="kicker">Gallery</div>
-        <h2>营业图</h2>
-        <p>选择任意图片可放大查看。图源：微博 @鞠婧祎 营业图，版权归权利方所有，仅供粉丝非商业纪念用途。</p>
-      </div>
-
-      <div class="gallery-grid">
-        <button class="gallery-item reveal" type="button" data-label="营业图 · 一" aria-label="放大查看营业图 · 一"><img src="assets/img/gallery-01.jpg" alt="营业图 · 一" /></button>
-        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 二" aria-label="放大查看营业图 · 二"><img src="assets/img/gallery-02.jpg" alt="营业图 · 二" /></button>
-        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 三" aria-label="放大查看营业图 · 三"><img src="assets/img/gallery-03.jpg" alt="营业图 · 三" /></button>
-        <button class="gallery-item reveal" type="button" data-label="营业图 · 四" aria-label="放大查看营业图 · 四"><img src="assets/img/gallery-04.jpg" alt="营业图 · 四" /></button>
-        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 五" aria-label="放大查看营业图 · 五"><img src="assets/img/gallery-05.jpg" alt="营业图 · 五" /></button>
-        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 六" aria-label="放大查看营业图 · 六"><img src="assets/img/gallery-06.jpg" alt="营业图 · 六" /></button>
-        <button class="gallery-item reveal" type="button" data-label="营业图 · 七" aria-label="放大查看营业图 · 七"><img src="assets/img/gallery-07.jpg" alt="营业图 · 七" /></button>
-        <button class="gallery-item reveal d1" type="button" data-label="营业图 · 八" aria-label="放大查看营业图 · 八"><img src="assets/img/gallery-08.jpg" alt="营业图 · 八" /></button>
-        <button class="gallery-item reveal d2" type="button" data-label="营业图 · 九" aria-label="放大查看营业图 · 九"><img src="assets/img/gallery-09.jpg" alt="营业图 · 九" /></button>
-      </div>
+      <div class="section-head reveal" data-pagehead data-source="GALLERY"></div>
+      <div class="gallery-grid" data-render-gallery></div>
     </div>
   </section>
 
+  <!-- 图片版权说明 -->
   <section class="section-alt">
-    <div class="wrap">
-      <div class="disclaimer reveal">
-        <div class="ico">i</div>
-        <div>
-          <h3>图片版权说明</h3>
-          <p>本页图片为微博 @鞠婧祎 公开营业图，图源已标注，版权归原作者及权利方所有；未经授权的肖像、写真与视频请勿上传或传播。本站图片仅作非商业纪念用途。</p>
-        </div>
-      </div>
-    </div>
+    <div class="wrap" data-site-notice="image"></div>
   </section>
 
-  <footer class="footer">
-    <div class="wrap">
-      <div class="top">
-        <div>
-          <div class="brand-f">鞠婧祎</div>
-          <p>一个由粉丝用心守护的纪念角落。</p>
-        </div>
-        <div class="links">
-          <div>
-            <h5>站点</h5>
-            <a href="index.html">首页</a>
-            <a href="about.html">关于她</a>
-            <a href="works.html">作品</a>
-          </div>
-          <div>
-            <h5>同好</h5>
-            <a href="gallery.html">图库</a>
-            <a href="news.html">动态</a>
-          </div>
-          <div class="social-col">
-            <h5>社交账号</h5>
-            <div class="social-row">
-              <a class="social-chip" href="https://weibo.com/u/3669102477" target="_blank" rel="noopener">微博</a>
-              <a class="social-chip" href="https://v.douyin.com/kyUIUpl1Lpw/" target="_blank" rel="noopener">抖音</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bar">
-        本站为非官方粉丝站，与艺人及经纪公司无关 · 内容仅供粉丝非商业纪念用途<br />
-        © 2026 蜜橘小窝 · 非官方粉丝站
-      </div>
-    </div>
-  </footer>
+  <!-- 页脚：由 data/site.js 渲染 -->
+  <footer class="footer" data-site-footer></footer>
 
   <!-- 灯箱 -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true" inert>
@@ -99,6 +34,8 @@
     <div class="lb-inner"></div>
   </div>
 
+  <script src="data/site.js"></script>
+  <script src="data/gallery.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
