@@ -118,7 +118,7 @@ window.NEWS = {
       cover: 'assets/img/gallery-08.jpg',
       coverAlt: '鞠婧祎造型站内配图',
       coverCaption: '站内配图，非本次动态官方物料 · 图片来源：微博 @鞠婧祎',
-      summary: 'PORT 中文版于 2026 年 8 月 21 日发布鞠婧祎九月刊封面预告，并公布 8 月 22 日 11:30 的刊物信息。官方以“当沙漏第六十六次翻转，迎来了荒漠之花的全盛时刻”预告本次封面主题。',
+      summary: 'PORT 中文版于 2026 年 8 月 21 日发布鞠婧祎九月刊封面预告，并公布 8 月 22 日 11:30 的刊物信息。官方以“当沙漏第六十六次翻转，迎来了荒漠之花的全盛时刻”预告本次封面主题。这是 PORT 中文版创刊以来首位女性封面人物。',
       facts: [
         { label: '动态分类', value: '杂志动态' },
         { label: '发布状态', value: '九月刊封面预告已发布' },
@@ -151,6 +151,72 @@ window.NEWS = {
         note: '本页信息依据官方公开微博整理。',
         href: 'https://weibo.com/3669102477/5329580304105857',
         label: '查看鞠婧祎与凸凸棉共创微博原文'
+      }
+    },
+    {
+      id: 'fred-2026-07',
+      date: '2026.07.24',
+      tag: '品牌动态',
+      title: 'FRED 斐登中国区品牌大使 · 七夕限定系列',
+      desc: '以全新 Force 10 系列七夕限定项链，诠释「无畏自爱」',
+      cover: 'assets/img/gallery-09.jpg',
+      coverAlt: '鞠婧祎造型站内配图',
+      coverCaption: '站内配图，非本次动态官方物料 · 图片来源：微博 @鞠婧祎',
+      summary: '2026 年 7 月，法国高级珠宝品牌 FRED 斐登携手中国区品牌大使鞠婧祎，推出全新 Force 10 系列七夕限定项链。品牌以“无畏自爱，全然悦己”为主题，项链沿袭标志性航海扣设计，中央镶嵌红宝石、外绕钻石，鞠婧祎以简约米白色高领裙装造型出镜演绎。',
+      facts: [
+        { label: '动态分类', value: '品牌动态' },
+        { label: '合作身份', value: 'FRED 斐登中国区品牌大使' },
+        { label: '合作系列', value: 'Force 10 七夕限定项链' },
+        { label: '发布时间', value: '2026.07' }
+      ],
+      source: {
+        note: '本页信息依据品牌官方物料与时尚媒体报道整理。',
+        href: 'https://cosmopolitancn.com/cosmo/fashion/detail/50134',
+        label: '查看时尚 COSMO 报道'
+      }
+    },
+    {
+      id: 'birthday-2026',
+      date: '2026.06.18',
+      tag: '音乐动态',
+      title: '32 岁生日 · 单曲《FIND THE WAY》上线',
+      desc: '恒星引力「寻心之旅」限定单曲，生日当天温暖上线',
+      cover: 'assets/img/gallery-02.jpg',
+      coverAlt: '鞠婧祎营业图站内配图',
+      coverCaption: '站内配图，非本次动态官方物料 · 图片来源：微博 @鞠婧祎',
+      summary: '2026 年 6 月 18 日，鞠婧祎 32 岁生日当天，由恒星引力音乐工厂出品的限定单曲《FIND THE WAY》正式上线，收录于同名专辑。歌曲以“氛围感 + 律动感”为特点，编曲以钢琴为核心层层递进，副歌融入鼓乐，歌词以舞台、夜空、银河为核心意象。',
+      facts: [
+        { label: '动态分类', value: '音乐动态' },
+        { label: '作品类型', value: '生日限定单曲' },
+        { label: '出品方', value: '恒星引力音乐工厂' },
+        { label: '上线时间', value: '2026.06.18' }
+      ],
+      source: {
+        note: '本页信息依据公开音乐平台与百科资料整理。',
+        href: 'https://baike.baidu.com/item/find%20the%20way/67995349',
+        label: '查看《FIND THE WAY》百科词条'
+      }
+    },
+    {
+      id: 'prsr-2026-01',
+      date: '2026.01.19',
+      tag: '品牌动态',
+      title: '帕莎眼镜全球品牌代言人',
+      desc: '「祎」镜逐光，此刻耀目',
+      cover: 'assets/img/gallery-03.jpg',
+      coverAlt: '鞠婧祎营业图站内配图',
+      coverCaption: '站内配图，非本次动态官方物料 · 图片来源：微博 @鞠婧祎',
+      summary: '2026 年 1 月，帕莎眼镜（PRSR）官宣鞠婧祎成为品牌全球品牌代言人，官方以“「祎」镜逐光，此刻耀目”发布本次合作。品牌同步推出代言人限定周边礼盒与线下门店活动。',
+      facts: [
+        { label: '动态分类', value: '品牌动态' },
+        { label: '合作身份', value: '帕莎眼镜全球品牌代言人' },
+        { label: '官宣状态', value: '品牌官方微博已发布' },
+        { label: '发布时间', value: '2026.01' }
+      ],
+      source: {
+        note: '本页信息依据品牌官方微博整理。',
+        href: 'https://weibo.com/3079702044/QnO4vugLW',
+        label: '查看帕莎眼镜官方微博原文'
       }
     }
   ]
