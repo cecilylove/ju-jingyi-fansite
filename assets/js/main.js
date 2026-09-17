@@ -200,10 +200,10 @@ const DELAY4 = ['', ' d1', ' d2', ' d3'];
   const grid = document.querySelector('[data-render-gallery]');
   if (grid && window.GALLERY && Array.isArray(window.GALLERY.photos)) {
     grid.innerHTML = window.GALLERY.photos.map((photo, index) => {
-      const label = photo.label || `营业图 · ${index + 1}`;
+      const label = photo.label || `图库 · ${index + 1}`;
       return `<button class="gallery-item reveal${DELAY3[index % 3]}" type="button" ` +
         `data-label="${escHtml(label)}" aria-label="放大查看${escHtml(label)}">` +
-        `<img src="${escHtml(photo.src)}" alt="${escHtml(label)}" /></button>`;
+        `<img src="${escHtml(photo.src)}" alt="${escHtml(label)}" loading="lazy" decoding="async" /></button>`;
     }).join('');
   }
 
