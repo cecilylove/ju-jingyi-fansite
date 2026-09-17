@@ -515,6 +515,19 @@ const DELAY4 = ['', ' d1', ' d2', ' d3'];
       `</a>`
     )).join('');
   });
+
+  /* 品牌合作卡：href 指向品牌方官宣帖，新窗口打开 */
+  Array.from(document.querySelectorAll('[data-render-brands]')).forEach(container => {
+    const list = news.brands;
+    if (!Array.isArray(list)) return;
+    container.innerHTML = list.map((item, index) => (
+      `<a class="card reveal${DELAY3[index % 3]}" href="${escHtml(item.href)}" target="_blank" rel="noopener">` +
+      `<span class="tag">${escHtml(item.date)}</span>` +
+      `<h3>${escHtml(item.brand)}</h3>` +
+      `<p>${escHtml(item.title)}</p>` +
+      `</a>`
+    )).join('');
+  });
 })();
 
 /* =========================================================
@@ -836,7 +849,7 @@ const DELAY4 = ['', ' d1', ' d2', ' d3'];
    ========================================================= */
 (function renderFallback() {
   const selector = '[data-render],[data-render-gallery],[data-render-home],' +
-    '[data-render-about],[data-render-news],[data-render-news-articles],' +
+    '[data-render-about],[data-render-news],[data-render-news-articles],[data-render-brands],' +
     '[data-render-milestones],[data-pagehead],[data-heading],[data-subtitle],' +
     '[data-site-notice],[data-update-root]';
 

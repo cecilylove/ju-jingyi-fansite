@@ -37,7 +37,8 @@ window.NEWS = {
      ⚠️ timeline 这一条当前没有页面在用（星河纪事已从动态页移除，见文件顶部说明）。
         保留是为了将来恢复展示时能直接复用。 */
   sections: {
-    timeline: { kicker: 'News', title: '星河纪事', desc: '从 2013 年入选 SNH48 到 2026 年，逐年记录作品、活动与重要节点。（资料参考公开报道与百科，以官方为准）' }
+    timeline: { kicker: 'News', title: '星河纪事', desc: '从 2013 年入选 SNH48 到 2026 年，逐年记录作品、活动与重要节点。（资料参考公开报道与百科，以官方为准）' },
+    brands:   { kicker: 'Brands', title: '品牌合作', desc: '2026 年官宣的商务合作，每条附品牌方官宣链接。' }
   },
 
   /* ---------- 3. 星河纪事时间线（逐年铺开） ---------- */
@@ -219,5 +220,24 @@ window.NEWS = {
         label: '查看帕莎眼镜官方微博原文'
       }
     }
+  ],
+
+  /* ---------- 5. 品牌合作（商务代言一览） ----------
+     ★ 只收录**有官方官宣链接**的合作。
+     ⚠️ 头衔必须逐字照抄官方原话 —— 「全球品牌代言人」「品牌全球代言人」「品牌大使」
+        「超级会员代言人」不是一回事，**不要顺手统一写成"代言人"**（粉丝站最容易写混的地方）。
+     新增一条：{ brand, title, date, href }，href 必须是品牌官方账号的官宣帖。
+     （FRED 一条暂时用时尚媒体报道替代——未找到其官方微博的官宣原帖。） */
+  brands: [
+    { brand: '凸凸棉',       title: '品牌全球代言人', date: '2026.08.08', href: 'https://weibo.com/6897606002/RcrQsCkOm' },
+    { brand: '恩雅赛博吉他', title: '全球品牌代言人', date: '2026.06.16', href: 'https://m.weibo.cn/status/5310396018984548' },
+    { brand: '拉芳',         title: '全球品牌代言人', date: '2026.06.05', href: 'https://weibo.com/7952124485/5342654193206398' },
+    { brand: 'RUFI',         title: '品牌全球代言人', date: '2026.05.18', href: 'https://weibo.com/8014013358/QFU7LE7GZ' },
+    { brand: 'BKT',          title: '品牌全球代言人', date: '2026.05.09', href: 'https://m.weibo.cn/detail/5296602933101189' },
+    { brand: '淘宝 × 天猫',  title: '服饰品牌大使',   date: '2026.03.23', href: 'https://m.weibo.cn/detail/5281116425815539' },
+    { brand: '达肤妍',       title: '全球品牌代言人', date: '2026.03.12', href: 'https://weibo.com/7572549120/Qwd5QlCBi' },
+    { brand: 'FRED 斐登',    title: '中国区品牌大使', date: '2026.01',    href: 'https://cosmopolitancn.com/cosmo/fashion/detail/50134' },
+    { brand: '帕莎眼镜',     title: '全球品牌代言人', date: '2026.01.19', href: 'https://weibo.com/3079702044/QnO4vugLW' },
+    { brand: 'QQ音乐',       title: '超级会员代言人', date: '2026.01.15', href: 'https://weibo.com/2169129705/QnmdoyE8F' }
   ]
 };
