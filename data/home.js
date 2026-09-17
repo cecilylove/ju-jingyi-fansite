@@ -39,12 +39,16 @@ window.HOME = {
   ],
 
   /* ---------- 3. 各区块标题 ----------
-     对应 index.html 里的 <div class="section-head reveal" data-heading="键名" data-source="HOME"> */
+     对应 index.html 里的 <div class="home-section-heading" data-heading="键名" data-source="HOME">
+
+     【命名规则 · 站主 2026-09-17 定】用**朴素的功能性名称**，不要文艺化、不要造词。
+       参照：应援档案 / 近期动态 / 关于她 / 音乐与影视 / 图库 / 成长历程。
+     ⚠️ 也别复用首屏 hero 的意象（「星河」「光」）—— 同页重复会稀释它。 */
   sections: {
     updates:   { kicker: 'Updates',        title: '近期动态',   desc: '记录最近的杂志消息与品牌合作。' },
-    works:     { kicker: 'Selected Works', title: '音乐与光影', desc: '从旋律到角色，收藏值得反复回望的代表作品。' },
-    gallery:   { kicker: 'Gallery',        title: '光影掠影',   desc: '精选微博营业图，仅供非商业纪念用途。' },
-    milestones:{ kicker: 'Milestones',     title: '成长里程碑', link: { href: 'about.html', label: '查看完整成长历程' } }
+    works:     { kicker: 'Selected Works', title: '音乐与影视', desc: '从旋律到角色，收藏值得反复回望的代表作品。' },
+    gallery:   { kicker: 'Gallery',        title: '图库',       desc: '精选微博营业图，仅供非商业纪念用途。' },
+    milestones:{ kicker: 'Milestones',     title: '成长历程',   link: { href: 'about.html', label: '查看完整成长历程' } }
   },
 
   /* ---------- 4. 近期动态卡 ----------
@@ -54,13 +58,10 @@ window.HOME = {
      要加/改动态 → 只改 data/news.js，首页自动跟着变。 */
 
   /* ---------- 5. 关于她摘要 ----------
-     title 的取名规则：首页区块标题一律用「描述性短语」，不要照搬导航名
-     （其他区块是「近期动态 / 音乐与光影 / 光影掠影 / 成长里程碑」，都描述性）。
-     ⚠️ 也不要在这里再用「星河」「光」—— 那是首屏 hero 的意象
-     （「璀璨星河里，我们替你收藏每一束光」），同一页重复会稀释它。 */
+     区块标题的命名规则见上面第 3 节。 */
   about: {
     kicker: 'About Her',
-    title: '走近她',
+    title: '关于她',
     lead: '中国内地影视女演员、流行乐歌手。2013 年正式出道，从剧场舞台走向更广阔的音乐与光影世界。',
     paragraphs: [
       '2016 年、2017 年连续获得 SNH48 总决选第一名，2017 年晋升明星殿堂并成立个人工作室。她用作品记录成长，也在每一次舞台与角色中留下属于自己的光。'
@@ -83,9 +84,9 @@ window.HOME = {
       href: 'works.html',
       ariaLabel: '查看音乐作品',
       image: 'assets/img/gallery-07.jpg',
-      imageAlt: '音乐篇章',
+      imageAlt: '音乐作品',
       badge: 'Music',
-      title: '音乐篇章',
+      title: '音乐作品',
       desc: '从首张个人 EP《每一天》到担任总监制的九周年专辑《IX》，用旋律记录每一阶段的自己。',
       items: [
         { title: '《每一天》',   year: '2016' },
@@ -98,9 +99,9 @@ window.HOME = {
       href: 'works.html',
       ariaLabel: '查看影视作品',
       image: 'assets/img/feature-screen.jpg',
-      imageAlt: '光影足迹',
+      imageAlt: '影视作品',
       badge: 'Screen',
-      title: '光影足迹',
+      title: '影视作品',
       desc: '从雪飞霜、韩芸汐到韩菱纱，她在不同故事里塑造鲜活角色，也不断拓展自己的表演边界。',
       items: [
         { title: '《芸汐传》', year: '2018' },
