@@ -777,7 +777,7 @@ const DELAY4 = ['', ' d1', ' d2', ' d3'];
 
     container.innerHTML = preview.photos.map((photo, index) => {
       const feature = index === 0 ? ' home-gallery-feature' : '';
-      const alt = photo.alt || `鞠婧祎营业图${index + 1}`;
+      const alt = photo.alt || `鞠婧祎图片 ${index + 1}`;
       return `<a class="home-gallery-item${feature} reveal${delays[index % delays.length]}" ` +
         `href="${escHtml(preview.href)}" aria-label="前往完整图库查看${escHtml(alt)}">` +
         `<img src="${escHtml(photo.src)}" alt="${escHtml(alt)}" loading="lazy" /></a>`;

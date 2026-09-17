@@ -43,11 +43,19 @@ window.HOME = {
 
      【命名规则 · 站主 2026-09-17 定】用**朴素的功能性名称**，不要文艺化、不要造词。
        参照：应援档案 / 近期动态 / 关于她 / 音乐与影视 / 图库 / 成长历程。
-     ⚠️ 也别复用首屏 hero 的意象（「星河」「光」）—— 同页重复会稀释它。 */
+     ⚠️ 也别复用首屏 hero 的意象（「星河」「光」）—— 同页重复会稀释它。
+
+     【desc 写不写】desc 不用硬凑。右侧那行小字只在**能补充信息**时才写：
+       · 讲「为什么值得看」—— 如 works：「从旋律到角色，收藏值得反复回望的代表作品。」
+       · 讲「来源与合规」—— 如 gallery：「图源：微博 @鞠婧祎，仅供非商业纪念用途。」
+     ⚠️ **不要写「记录最近的 XX 与 YY」这类说明句** —— 标题 + 卡片已经说清了是什么，
+        再加一句只是复述，还会把内容范围写窄（一说"杂志与品牌"，
+        以后放作品/活动类动态就自相矛盾）。`updates` 因此**刻意不写 desc**。
+     · 想给右侧放个入口（而非说明）用 `link: { href, label }` —— 如 milestones。 */
   sections: {
-    updates:   { kicker: 'Updates',        title: '近期动态',   desc: '记录最近的杂志消息与品牌合作。' },
+    updates:   { kicker: 'Updates',        title: '近期动态' },
     works:     { kicker: 'Selected Works', title: '音乐与影视', desc: '从旋律到角色，收藏值得反复回望的代表作品。' },
-    gallery:   { kicker: 'Gallery',        title: '图库',       desc: '精选微博营业图，仅供非商业纪念用途。' },
+    gallery:   { kicker: 'Gallery',        title: '图库',       desc: '图源：微博 @鞠婧祎，仅供非商业纪念用途。' },
     milestones:{ kicker: 'Milestones',     title: '成长历程',   link: { href: 'about.html', label: '查看完整成长历程' } }
   },
 
@@ -116,12 +124,12 @@ window.HOME = {
   galleryPreview: {
     href: 'gallery.html',
     photos: [
-      { src: 'assets/img/gallery-01.jpg', alt: '鞠婧祎营业图一' },
-      { src: 'assets/img/gallery-02.jpg', alt: '鞠婧祎营业图二' },
-      { src: 'assets/img/gallery-03.jpg', alt: '鞠婧祎营业图三' },
-      { src: 'assets/img/gallery-04.jpg', alt: '鞠婧祎营业图四' },
-      { src: 'assets/img/gallery-05.jpg', alt: '鞠婧祎营业图五' },
-      { src: 'assets/img/gallery-06.jpg', alt: '鞠婧祎营业图六' }
+      { src: 'assets/img/gallery-01.jpg', alt: '鞠婧祎图片 1' },
+      { src: 'assets/img/gallery-02.jpg', alt: '鞠婧祎图片 2' },
+      { src: 'assets/img/gallery-03.jpg', alt: '鞠婧祎图片 3' },
+      { src: 'assets/img/gallery-04.jpg', alt: '鞠婧祎图片 4' },
+      { src: 'assets/img/gallery-05.jpg', alt: '鞠婧祎图片 5' },
+      { src: 'assets/img/gallery-06.jpg', alt: '鞠婧祎图片 6' }
     ],
     button: { href: 'gallery.html', label: '浏览完整图库' }
   },
